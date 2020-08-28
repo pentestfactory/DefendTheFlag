@@ -227,6 +227,22 @@ Configuration CreateADForest
             AutoUpgrade = $true
             DependsOn = '[cChocoInstaller]InstallChoco'
         }
+	
+	cChocoPackageInstaller Git
+        {
+            Name = 'git'
+            Ensure = 'Present'
+            AutoUpgrade = $true
+            DependsOn = '[cChocoInstaller]InstallChoco'
+        }
+	
+	cChocoPackageInstaller Sublime3
+        {
+            Name = 'sublimetext3'
+            Ensure = 'Present'
+            AutoUpgrade = $true
+            DependsOn = '[cChocoInstaller]InstallChoco'
+        }
 		
 		cChocoPackageInstaller WindowsTerminal
         {
