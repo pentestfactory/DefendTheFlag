@@ -244,7 +244,7 @@ Configuration CreateADForest
             DependsOn = '[cChocoInstaller]InstallChoco'
         }
 		
-		cChocoPackageInstaller WindowsTerminal
+	cChocoPackageInstaller WindowsTerminal
         {
             Name = 'microsoft-windows-terminal'
             Ensure = 'Present'
